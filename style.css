@@ -1,6 +1,6 @@
 body
 {
-    background: lightblue;
+    background-image:url("icon/back1.jpg") ;
     display: flex;
     align-content: center;
     align-items: center;
