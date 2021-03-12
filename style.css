@@ -1,6 +1,9 @@
 body
 {
-    background-image:url("icon/back1.jpg") ;
+    
+    background-image: url("icon/back1.jpg");
+    background-size: cover;
+   
     display: flex;
     align-content: center;
     align-items: center;
@@ -23,6 +26,12 @@ form
     margin-bottom: 40px;
 }
 h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: bold;
+}
+h1{
     text-align: center;
     margin-bottom: 40px;
     font-size: 36px;
@@ -58,6 +67,15 @@ button :hover{
 .error{
     color:red;
     background:snow;
+    width :95%;
+    padding:10px;
+    border-radius: 5px;
+    margin: 20px auto;
+
+}
+.success{
+    color: #40754C;
+    background:#D4EDDA;
     width :95%;
     padding:10px;
     border-radius: 5px;

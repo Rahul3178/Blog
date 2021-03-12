@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>login</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
 
     
 </head>
@@ -20,7 +20,9 @@
 <input type="password"  name ="Password" placeholder="password"></input>
 <br><br>
 <button type="submit">login</button>
-<a href="signup.php">Wants to register?</a>
+<a href="signup.php">Wants to register?</a><br>
+<br>
+<a href="forgotpass.php">Change Password </a>
 
 </form>
 
