@@ -2,14 +2,20 @@ body
 {
     
     background-image: url("icon/back1.jpg");
-    background-size: cover;
-   
+    background-size:cover;
+    
+}
+.main
+{
+    
+    
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
     height: 100vh;
     flex-direction: column;
+    
 }
 *{
     font-family: sans-serif;

@@ -7,6 +7,7 @@ SignUp
 <link rel="stylesheet" type="text/css" href="style.css"> </link>
 </head>
 <body>
+  <div class="main">
     <form action="Signup_bend.php" method="Post">
         <h1> SignUp </h1>
         <?php if(isset($_GET['error'])) {?>
@@ -66,5 +67,6 @@ SignUp
         <a href="Index.php">Already have an account?</a>
         <button type="submit" name="Rbutton">SignUp</button>
     </form>
+    </div>
 </body>
 </html>

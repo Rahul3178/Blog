@@ -8,6 +8,8 @@
             
     </head>
     <body>
+        <?php include 'navigation.php';?>
+        <div class="main">
         <form>
             <h1> Change Password </h1>
             <?php if(isset($_GET['error'])) {?>
@@ -19,5 +21,6 @@
             <br>
             <button type="submit">Change</button>
         </form>
+        </div>
     </body>
 </html>

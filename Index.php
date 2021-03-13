@@ -8,7 +8,7 @@
 </head>
 <body>
 
-
+<div class="main">
 <form action="Login.php" method="POST" >
     
 <h2>login</h2>
@@ -25,6 +25,7 @@
 <a href="forgotpass.php">Change Password </a>
 
 </form>
+</div>
 
 
 </body>
