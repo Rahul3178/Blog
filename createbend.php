@@ -29,7 +29,7 @@
         }
         else 
         {
-            Echo "welcome" ;
+            
 
             $sql="INSERT INTO post(title,post)VALUES('$title','$post')";
             $result=mysqli_query($conn,$sql);

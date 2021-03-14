@@ -1,3 +1,4 @@
+<?php include 'homebend.php';?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -106,8 +107,8 @@ button  :hover{
 <body>
 <?php include 'navigation.php';?>
 <div class="main">
-<form action="createbend.php" method="post">
-        <h1>Create Post</h1>
+<form action="homebend.php" method="post">
+        <h1>Update Post </h1>
        <?php 
         if(isset($_GET['error']))
         {
@@ -120,13 +121,18 @@ button  :hover{
        ?>
        <p class='success'>  <?php echo $_GET['success'];?></p>
       <?php } ?>
-       
-        <input type="text" name="title" placeholder="Title"></input>
+            
+        
+        <div class="up">
+        <?php foreach($query as $q){?>
+        <input type="text" name="id" value="<?php echo $q['id'];?>" hidden>
+        <input type="text" name="title" placeholder="Title" value="<?php echo $q['title'];?>"></input>
         <br><br>
-        <textarea  class="post"  rows="8" type="text" name="area" placeholder="Write here"></textarea>
-        <br><br>
-        <button  name="create" type="submit">Create</button>
+        <textarea  class="post"  rows="8" type="text" name="area" placeholder="Write here"  ><?php echo $q['post'];?></textarea>
+        <br><br><?php }?>
+        <button  name="update" type="submit">update</button>
         <button  name="delete" style="float : right; background: red;" type="submit">Delete</button>
+        </div>
         
 </form>
 </div>

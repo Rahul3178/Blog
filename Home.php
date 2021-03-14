@@ -1,36 +1,55 @@
-<?php
-    session_start();
-    if(isset($_SESSION['user_name']) && isset($_SESSION['id']))
-    {
-?>
+<?php include 'homebend.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
 <title>Home</title>
 <link rel="stylesheet" type="text/css" href="Homestyle.css">
 </head>
+        <style>
+            
+            /* Create two equal columns that floats next to each other */
+                .rows {
+                    display: block;
+                    text-align: center;
+                    align-items: center;
+                    align-content: center;
+                    justify-content: center;
+                  
+                    width: 50%;
+                    padding: 10px;
+                }
+
+                .card-body
+                {
+                    display: block;
+                    text-align: center;
+                    align-items: center;
+                    align-content: center;
+                    justify-content: center;
+                    
+                    width: 50%;
+                    padding: 10px;
+                    background: white;
+                    border: 2px solid #fff;
+                }
+        </style>
 <body>
+<div class="nav"><?php include 'navigation.php'; ?></div>
+    <div class="rows">
+        <?php foreach($query as $q) {?>
+        
+            <div class="card">
+                <div class="card-body">
+                <h4 class="card-title"> <?php echo $q['title'];?></h4>
+                <p class="card-text"><?php echo $q['post'];?></p>
+                <a href="view.php?id=<?php echo $q['id'];?>" class="btn-light">ReadMore..<span class="text-danger">&rarr;</span></a>
+                </div>
+            </div>
+        
+    </div>
+    <?php }?>
 
         
-        <nav>
-            <ul>
-            
-            <li><a href="Logout.php" style="margin-right: 20px;">Logout</a></li>
-            <li><a href="Changepass.php">Change Password</a></li>
-            <li><a href="createpost.php">Create post</a></li>
-            <li><a class="active" href="Home.php">Home</a></li>
-            <h3>Welcome   <?php echo " ".$_SESSION['name'];?></h3>
-            
-            
-            </ul>
-        
-        </nav>
+
 </body>
 </html>
-<?php
-    }
-    else
-    {
-        header("location:index.php");
-    }
-?>
