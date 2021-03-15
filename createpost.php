@@ -125,8 +125,8 @@ button  :hover{
         <br><br>
         <textarea  class="post"  rows="8" type="text" name="area" placeholder="Write here"></textarea>
         <br><br>
-        <button  name="create" type="submit">Create</button>
-        <button  name="delete" style="float : right; background: red;" type="submit">Delete</button>
+        <button  name="create" type="submit" style="float: right;">Create</button>
+        
         
 </form>
 </div>

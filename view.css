@@ -1,0 +1,71 @@
+body
+{
+       background:url("icon/back1.jpg");
+       background-size: cover;
+       
+}
+
+#t1
+{
+       display: block;
+       background:none;
+       border: none;
+       
+       align-content: center;
+       justify-content: center;
+       text-align: center;
+       align-items: center;
+       padding: 20px;
+       font-size: 24px;
+       font-weight: bold;
+       margin-left: 60px;
+       margin-right: 60px;
+}
+*{
+       font-family: sans-serif;
+       box-sizing: border-box;
+       font-size: 18px;
+ }
+ #t2
+{
+       display: block;
+       background:none;
+       border:none;
+       width: auto;
+       align-content: center;
+       justify-content: center;
+       text-align: center;
+       align-items: center;
+       padding: 30px;
+       font-size: 20px;
+       margin-left: 60px;
+       margin-right: 60px;
+}
+          #t3{
+              
+              background: lightgreen;
+              color: #fff;
+              padding:30px,15px;
+             
+              margin-left: 60px;
+              border-radius: 5px;
+              border:none;
+              width: 20%;
+              height: 7vh;
+              
+              
+              }
+              #t4
+              {
+              
+             
+              background: red;
+              color: #fff;
+              padding:30px,15px;
+              margin-right:60px;
+              
+              border-radius: 5px;
+              border:none;
+              width: 20%;
+              height: 7vh;
+              }

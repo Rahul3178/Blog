@@ -15,6 +15,9 @@
 <?php if(isset($_GET['error'])) {?>
     <p class="error"><?php echo $_GET['error']; ?></p>
     <?php } ?>
+    <?php if(isset($_GET['success'])) {?>
+    <p class="success"><?php echo $_GET['success']; ?></p>
+    <?php } ?>
 <input type="text"  name="Name" placeholder="user name"></input>
 <br><br>
 <input type="password"  name ="Password" placeholder="password"></input>
@@ -22,7 +25,7 @@
 <button type="submit">login</button>
 <a href="signup.php">Wants to register?</a><br>
 <br>
-<a href="forgotpass.php">Change Password </a>
+
 
 </form>
 </div>

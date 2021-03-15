@@ -39,7 +39,7 @@ SignUp
         <input type="text"
          name="Ruser"
           placeholder="User_name"
-          value="<?php echo $_GET['uname']; ?>">
+          value="<?php echo $_GET['uname']; ?>"></input>
           <br>
           
           <?php } else {?>

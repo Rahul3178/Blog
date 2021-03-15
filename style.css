@@ -1,20 +1,21 @@
 body
 {
     
-    background-image: url("icon/back1.jpg");
+    background-image:url("icon/back1.jpg");
     background-size: cover;
+    
     
 }
 .main
 {
     
     
-    display: flex;
+    display:flex;
     align-content: center;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    flex-direction: column;
+    flex-direction:column;
     
 }
 *{

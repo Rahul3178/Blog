@@ -1,5 +1,5 @@
 <?php
-
+   
     include 'dbconnection.php';
     // Get data to display on index page
     $sql = "SELECT * FROM post";
@@ -19,21 +19,24 @@
         $id=$_REQUEST['id'];
         $sql="DELETE FROM post WHERE id=$id";
         mysqli_query($conn,$sql);
-        header("Location: home.php");
+        header("Location: home.php?error=Post deleted!");
         exit();
     }
 
         // update post data
      if(isset($_REQUEST['update']))
      {   
-         $id=$_REQUEST['id'];
+         $id=$_POST['id'];
          $title=$_POST['title'];
          $post=$_POST['area'];
-        $sql="update post SET title='$title', post='$post' where id='$id'";
-        $result=mysqli_query($conn,$sql);
-        print_r($result);
+         $sql="update post SET title='$title', post='$post' where id='$id'";
+        mysqli_query($conn,$sql);
+        header("Location:Home.php?success=Post updated");
+        exit();
+        
         
 
      }
-
+     
+   
 ?>

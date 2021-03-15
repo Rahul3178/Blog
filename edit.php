@@ -32,7 +32,7 @@ form
     padding: 20px;
 
 }
- input
+ #c1
  {
     display: block;
     border: 2x solid #ccc;
@@ -125,13 +125,13 @@ button  :hover{
         
         <div class="up">
         <?php foreach($query as $q){?>
-        <input type="text" name="id" value="<?php echo $q['id'];?>" hidden>
-        <input type="text" name="title" placeholder="Title" value="<?php echo $q['title'];?>"></input>
+        <input  name="id"hidden value="<?php echo $q['id'];?>" ></input>
+        <input id="c1" type="text" name="title" placeholder="Title" value="<?php echo $q['title'];?>"></input>
         <br><br>
         <textarea  class="post"  rows="8" type="text" name="area" placeholder="Write here"  ><?php echo $q['post'];?></textarea>
         <br><br><?php }?>
-        <button  name="update" type="submit">update</button>
-        <button  name="delete" style="float : right; background: red;" type="submit">Delete</button>
+        <button  name="update" style="float : right;" type="submit">update</button>
+        
         </div>
         
 </form>

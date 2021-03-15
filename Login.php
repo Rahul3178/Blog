@@ -26,6 +26,7 @@
         }
         else
         {
+            $pass=md5($pass);
             $sql="SELECT * FROM user WHERE user_name='$uname' AND password='$pass'";
             $result=mysqli_query($conn,$sql);
             
@@ -44,14 +45,14 @@
                 }
                 else
                 {
-                    header("Location:index.php?error=Invalid user name and password");
+                    header("Location:index.php?error=Invalid user name or password");
                     exit();
 
                 }
             }
             else
             {
-                header("Location:index.php?error=Invalid user name and password");
+                header("Location:index.php?error=Invalid user name or password");
                 exit();
 
             }
