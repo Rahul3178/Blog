@@ -1,0 +1,61 @@
+
+            body
+            {    
+                background-image: url("icon/back1.jpg");
+                background-size: cover;
+                
+            }
+            /* Create columns that floats next to each other */
+                .rows{
+                    display: block;
+                    text-align: center;
+                    align-items: center;
+                    align-content: center;
+                    justify-content: center;
+                    width: 50%;
+                    padding: 10px;
+                  
+                    margin-left: 100px;
+                }
+                .m2{
+                    display: block;
+                    box-shadow: 5px 5px 20px 0px rgba(2,2,0,0.7);
+                    background-color: white;
+                    border: none;
+                    border-radius: 15px;
+                    
+                    text-align: center;
+                    align-items: center;
+                    align-content: center;
+                    justify-content: center;
+                  
+                    width: 170%;
+                    padding: 5px;
+                    margin-right: 100px;
+                }
+                *{
+                        font-family: sans-serif;
+                        box-sizing: border-box;
+                        font-size: 18px;
+                    }
+                
+                .success
+                {
+                    color: white;
+                    background: lightgreen;
+                    border-radius: 15px;
+                    text-align: center;
+                    align-content: center;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 7px;
+                    width: auto;
+                    margin-left: auto;
+                    font-size: 18px;
+                }
+                h6{
+                color:#ccc;
+            }
+           
+                
+       

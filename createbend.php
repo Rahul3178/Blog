@@ -1,7 +1,15 @@
 <?php
-    session_start();
-    include 'dbconnection.php' ;
     
+    include 'dbconnection.php' ;
+    if(!isset($_SESSION)) 
+    { 
+        require_once 'session.php';
+    } 
+    
+    if(isset($_SESSION['user_name']))
+    {
+        $uname= $_SESSION['user_name'];
+
     if(isset($_POST['title']) && isset($_POST['area']))
     {
         function validate($data)
@@ -31,11 +39,11 @@
         {
             
 
-            $sql="INSERT INTO post(title,post)VALUES('$title','$post')";
+            $sql="INSERT INTO post(title,post,user_name)VALUES('$title','$post','$uname')";
             $result=mysqli_query($conn,$sql);
             if($result)
             {
-                header("Location:createpost.php?success=Post created");
+                header("Location:home.php?success=Post created");
                 exit();
             }
             else
@@ -57,6 +65,10 @@
         header("Location:createpost.php");
     }
 
-
+}
+else
+{
+    header("Location:index.php");
+}
 
 ?>

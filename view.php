@@ -4,9 +4,16 @@
        <link rel="stylesheet" type="text/css" href="view.css">
 <body>
 <?php include 'navigation.php'; ?>
+<div><p  style="margin-top:05%;"></p></div>
+              <?php if(isset($_GET['success'])) {?>
+                <p class="success"><?php echo $_GET['success'];?></p>
+                <?php }?>
+                <?php if(isset($_GET['error'])) {?>
+                <p class="error"><?php echo $_GET['error'];?></p>
+                <?php }?>
        <div class="none">
                 <?php foreach($query as $q) {?>
-                <div class="me">
+                <div class="me" >
                  <h2 id="t1"> <?php echo $q['title'];?></h2>
                 <p id="t2"><?php echo $q['post'];?></p>
                 </div>

@@ -4,7 +4,7 @@
 <title>
 SignUp
 </title>
-<link rel="stylesheet" type="text/css" href="style.css"> </link>
+<link rel="stylesheet" type="text/css" href="style1.css"> </link>
 </head>
 <body>
   <div class="main">

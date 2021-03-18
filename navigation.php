@@ -1,6 +1,6 @@
 <?php
- session_start();
- if(isset($_SESSION['name'] ) && isset($_SESSION['id']))
+    require_once 'session.php'; 
+ if(isset($_SESSION['name'] ) && isset($_SESSION['id']) && isset($_SESSION['user_name']))
  {
  ?>
 <html>
@@ -16,9 +16,9 @@
                 overflow: hidden;
                 background-color: #333;
                 opacity: 0.9;
-                position: -webkit-sticky; 
-                position: sticky;
+                position: fixed;
                 top: 0;
+                width: 100%;
              }
                     li
                     {
@@ -37,7 +37,7 @@
                     }
                     li a:hover
                     {
-                        background-color: #111;
+                        background-color: #4CAF50;
                     }
                     h3
                     {   background-color: #4CAF50;
@@ -50,25 +50,21 @@
                         text-decoration: none;
                         width: fit-content;
                     }
-                    .active {
-                        background-color: #4CAF50;
-                    }
-                    
-                    </style>
+                </style>
     
-    
+              
     <body>
     <nav>
             <ul>
             
             <li><a href="Logout.php" style="margin-right: 20px;">Logout</a></li>
             <li><a href="Changepass.php">Change Password</a></li>
+            <li name="mypost"><a href="My_post.php">My Post</a></li>
             <li><a href="createpost.php">Create post</a></li>
-            <li><a class="active" href="Home.php">Home</a></li>
+            <li><a  href="Home.php">Home</a></li>
             <h3>Welcome   <?php echo " ".$_SESSION['name'];?></h3>
-            
-            
-            </ul>
+              
+           </ul>
         
         </nav>
     </body>
@@ -77,7 +73,6 @@
  }
  else
  {
-     header("Location:home.php");
+     header("Location:index.php");
  }
-
-?>
+ ?>

@@ -12,7 +12,7 @@ body
 .main
 {
     
-    
+    margin-top: 40px;
     display: flex;
     align-content: center;
     align-items: center;
@@ -29,7 +29,7 @@ form
     background: #fff;
     border-radius: 15px;
     padding: 20px;
-
+    box-shadow: 10px 10px 20px 0px rgba(2,2,0,0.7);
 }
  input
  {
@@ -74,7 +74,7 @@ form
     border:none;
     width: 30%;
     height: 7vh;
-    
+    box-shadow: 5px 5px 20px 0px rgba(2,2,0,0.7);
 }
 button  :hover{
     opacity: .7;

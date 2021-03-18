@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Create Post</title>
+<title>Update Post</title>
 </head>
 <style>
 body
@@ -30,6 +30,7 @@ form
     background: #fff;
     border-radius: 15px;
     padding: 20px;
+    box-shadow: 5px 5px 20px 0px rgba(2,2,0,0.7);
 
 }
  #c1
