@@ -1,6 +1,6 @@
 body
 {
-       background:url("icon/back1.jpg");
+       background-image:url("icon/back1.jpg");
        background-size: cover;
        
 }
@@ -47,7 +47,7 @@ body
               color: #fff;
               padding:30px,15px;
              
-              margin-left: 60px;
+              margin-left: 250px;
               border-radius: 5px;
               border:none;
               width: 20%;
@@ -62,7 +62,7 @@ body
               background: red;
               color: #fff;
               padding:30px,15px;
-              margin-right:60px;
+              margin-right:250px;
               
               border-radius: 5px;
               border:none;

@@ -25,10 +25,24 @@
     if(isset($_REQUEST['delete']))
     {    
                 $id=$_REQUEST['id'];
-                $sql="DELETE FROM post WHERE id=$id";
-                mysqli_query($conn,$sql);
-                header("Location:home.php?success=Post deleted!");
-                exit();
+                $uname=$_SESSION['user_name'];
+                $sql2="SELECT * FROM post WHERE user_name='$uname' AND id='$id'";
+                $result2=mysqli_query($conn,$sql2);
+                if(mysqli_num_rows($result2))
+                {
+                    $sql="DELETE FROM post WHERE id='$id' and user_name='$uname'";
+                    mysqli_query($conn,$sql);
+                    header("Location:home.php?success=Post Deleted!");
+                    exit();
+                }
+                else{
+                    header("Location:home.php?error=you are not authorized to access!");
+                    exit();
+
+                }
+                
+              
+                
             }
         
 
@@ -52,7 +66,7 @@
             }
             else
             {
-                header("Location:home.php?error=You are not authorised user!");
+                header("Location:home.php?error=You are not authorised to access!");
                 exit();
             }
          
@@ -60,6 +74,42 @@
         
 
      }
+        
+     // comment work
      
+     if(isset($_POST['cb']))
+     {
+        if(isset($_POST['cname']) && isset($_POST['cemail']) && isset($_POST['ccomment']))
+        {
+            function validate($data)
+            {
+                $data=trim($data);
+                $data=stripslashes($data);
+                $data=htmlspecialchars($data);
+                return $data;
+            }
+            $cname=validate($_POST['cname']);
+            $cemail=validate($_POST['cemail']);
+            $ccomment=validate($_POST['ccomment']);
+            
+            if(isset($_REQUEST['id']))
+            {
+                $id=$_REQUEST['id'];
+                echo $id;
+                $sql="SELECT * FROM post WHERE id='$id'";
+                $query=mysqli_query($conn,$sql);
+                print_r($query);
+
+            }
+            
+
+        }
+        else
+        {
+            header("Location:view.php");
+            exit();
+        }
+     }
+                        
    
 ?>
