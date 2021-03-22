@@ -6,7 +6,7 @@
 <html>
 <head>
 <title>My Post</title>
-<link rel="stylesheet"  type="text/css" href="homes.css">
+<link rel="stylesheet"  type="text/css" href="css/homes1.css">
 </head>
         
 <body class="pro">

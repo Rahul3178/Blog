@@ -3,7 +3,7 @@
     <head>
         <title> Change password </title>
         
-            <link rel="stylesheet" type="text/css" href="style1.css"></link>
+            <link rel="stylesheet" type="text/css" href="css/style.css"></link>
 
             
     </head>

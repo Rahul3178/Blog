@@ -69,12 +69,12 @@ if(isset($_POST['Rname']) && isset($_POST['Ruser'] )&& isset($_POST['Email']) &&
             $result2=mysqli_query($conn,$sql2);
             if($result2)
             {
-                header("Location:index.php?success=your account is created successfully!");
+                header("Location:\quy/index.php?success=your account is created successfully!");
                 exit();
             }
             else
             {
-                header("Location:signup.php?success=unknown errors");
+                header("Location:signup.php?success=unknown errors error occured!");
                 exit();
             }
         }

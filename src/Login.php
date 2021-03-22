@@ -16,12 +16,12 @@
         $pass=validate($_POST['Password']);
         if(empty($uname))
         {
-            header("Location: index.php?error= User Name is required");
+            header("Location:\quy/index.php?error= User Name is required");
             exit();
         }
         else if(empty($pass))
         {
-           header("Location:index.php?error=Password is required");
+           header("Location:\quy/index.php?error=Password is required");
            exit();
         }
         else
@@ -45,14 +45,14 @@
                 }
                 else
                 {
-                    header("Location:index.php?error=Invalid user name or password");
+                    header("Location:\quy/index.php?error=Invalid user name or password");
                     exit();
 
                 }
             }
             else
             {
-                header("Location:index.php?error=Invalid user name or password");
+                header("Location:\quy/index.php?error=Invalid user name or password");
                 exit();
 
             }
@@ -61,7 +61,7 @@
     }
     else
     {
-        header ("Location:index.php");
+        header ("Location:\quy/index.php");
         exit();
     }
 ?>

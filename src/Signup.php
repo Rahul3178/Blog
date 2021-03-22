@@ -4,7 +4,7 @@
 <title>
 SignUp
 </title>
-<link rel="stylesheet" type="text/css" href="style1.css"> </link>
+<link rel="stylesheet" type="text/css" href="css/style.css"> </link>
 </head>
 <body>
   <div class="main">
@@ -64,7 +64,7 @@ SignUp
         <input type="password" name="Rpassword" placeholder="Create Password"></input><br>
         <input type="password" name="Rpassword2" placeholder="ReEnter Password"></input><br>
         <br>
-        <a href="Index.php">Already have an account?</a>
+        <a href="\quy/index.php">Already have an account?</a>
         <button type="submit" name="Rbutton">SignUp</button>
     </form>
     </div>

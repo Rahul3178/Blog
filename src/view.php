@@ -32,46 +32,8 @@
                 
                       
                         </form>
-       <!----------- comment section start from here ---->
-   <!---    <link rel="stylesheet" type="text/css" href="css/com.css">
        
-    <form class="c1" action="homebend.php" method="POST">
-    <h6>Comment</h6>
-    <div class="container">
-    <input class="i1" type="text" name="cname" placeholder="Name"></input>
-    <input class="i2" type="text" name="cemail"placeholder="Email"></input>
-    <br> 
-    <textarea rows="4" cols="80" class="i3"  name="ccomment"placeholder="Write here"></textarea>   
-    
-    <form method="POST">
-       
-    <button class="i4" name="cb"   type="submit"  >Comment</button>
-    </form>
-    
-    
-    
-</div>
-  </form>
-*/
-
-
-        <form class="c2">
-            <div class="row">
- <div class="column">
- <div class="box">
-     <h6 id="w1">user_name</h6></div>
- <div class="box">
-     <h6 id="w2">title</h6></div>
- <div class="box">
-     <textarea class="w3" readonly rows="4" cols="35" disabled style="float: left;">Write here...</textarea></div>
- <div class="box">
-     <button id="w4">Deleted</button></div>
-                   
-                </div>
-            </div>
-        </form>
-
-       </div> 
-                     //-->
+      
+                     
 </body>
 </html>

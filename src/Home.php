@@ -4,7 +4,7 @@
 <html>
 <head>
 <title>Home</title>
-<link rel="stylesheet"  type="text/css" href="homes.css">
+<link rel="stylesheet"  type="text/css" href="css/homes1.css">
 </head>
    <style>
              .error

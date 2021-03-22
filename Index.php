@@ -2,14 +2,14 @@
 <html>
 <head>
     <title>login</title>
-    <link rel="stylesheet" type="text/css" href="style1.css"></link>
+    <link rel="stylesheet" type="text/css" href="src/css/style.css"></link>
 
     
 </head>
 <body >
 
 <div class="main">
-<form action="Login.php" method="POST" >
+<form action="src/Login.php" method="POST" >
     
 <h2>login</h2>
 <?php if(isset($_GET['error'])) {?>
@@ -23,7 +23,7 @@
 <input type="password"  name ="Password" placeholder="password"></input>
 <br><br>
 <button type="submit">login</button>
-<a href="signup.php">Wants to register?</a><br>
+<a href="src/Signup.php">Wants to register?</a><br>
 <br>
 
 

@@ -1,0 +1,17 @@
+body{
+    background-image: url("icon/back1.jpg");
+    background-size: cover;
+}
+p{
+    text-align: left;
+}
+    textarea
+    {
+        resize:none;
+    }
+    .box1
+    {
+        display: inline-block;
+    overflow: hidden;
+    margin-left: 100px;
+    }
